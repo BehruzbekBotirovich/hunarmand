@@ -1,31 +1,20 @@
 <template>
-  <div class="grid grid-cols-4 gap-6 my-10">
-    <post-card-component v-for="item in posts" :key="String(item.id)" :post="item" />
+  <div :class="['grid gap-6 my-10', props.layout === 'vertical' ? 'grid-cols-4' : 'grid-cols-2']">
+    <post-card-component v-for="item in posts" :key="String(item.id)" :post="item" :layout="props.layout" />
   </div>
   <div class="flex items-center gap-2">
-    <button
-      v-if="currentPage !== 1"
-      @click="changePage(currentPage - 1)"
-      class="btn px-4 py-2 text-base text-graydark/75"
-    >
+    <button v-if="currentPage !== 1" @click="changePage(currentPage - 1)"
+      class="btn px-4 py-2 text-base text-graydark/75">
       <arrow-nav-icon direct="left" />
       <span>Prev</span>
     </button>
     <ul class="pagination__wrapper">
-      <li
-        v-for="item in totalPages"
-        :key="item"
-        @click="changePage(item)"
-        :class="{ active: currentPage === item }"
-      >
+      <li v-for="item in totalPages" :key="item" @click="changePage(item)" :class="{ active: currentPage === item }">
         {{ item }}
       </li>
     </ul>
-    <button
-      v-if="currentPage !== totalPages"
-      @click="changePage(currentPage + 1)"
-      class="btn px-4 py-2 text-base text-graydark/75"
-    >
+    <button v-if="currentPage !== totalPages" @click="changePage(currentPage + 1)"
+      class="btn px-4 py-2 text-base text-graydark/75">
       <span>Next</span>
       <arrow-nav-icon direct="right" />
     </button>
@@ -52,6 +41,13 @@ const changePage = (page: number): void => {
   if (page < 1 || page > totalPages.value) return
   setQueries({ page })
 }
+
+const props = defineProps({
+  layout: {
+    type: String,
+    default: 'vertical',
+  },
+})
 </script>
 
 <style scoped>
@@ -62,7 +58,7 @@ const changePage = (page: number): void => {
   padding: 0;
 }
 
-.pagination__wrapper > li {
+.pagination__wrapper>li {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -74,11 +70,11 @@ const changePage = (page: number): void => {
   cursor: pointer;
 }
 
-.pagination__wrapper > li:hover {
+.pagination__wrapper>li:hover {
   background: #f5f5f5;
 }
 
-.pagination__wrapper > li.active {
+.pagination__wrapper>li.active {
   background: #f5f5f5;
 }
 </style>

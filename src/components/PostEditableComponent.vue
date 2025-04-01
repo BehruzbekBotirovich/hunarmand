@@ -1,6 +1,6 @@
 <template>
   <router-link :to="`/single/${post?.id}`">
-    <div :class="props.layout" class="card-custom">
+    <div class="card-custom">
       <figure>
         <img :src="post?.image" alt="" class="aspect-[9/5] w-full object-cover rounded-xl" />
       </figure>
@@ -8,21 +8,25 @@
         <h2 class="card-title w-full text-lg font-semibold truncate">
           {{ post?.title }}
         </h2>
-        <p class="text-graydark/75 truncate-text">
-          {{ post?.description }}
-        </p>
-
         <div class="card__user">
-          <div class="flex items-center gap-2">
-            <img :src="post?.avatar" alt="User" class="w-11 h-11 rounded-xl" />
-            <div>
-              <p class="font-medium">{{ post?.author }}</p>
-              <p class="text-graydark/75 text-sm">{{ post?.date }}</p>
+          <div class="flex gap-5 items-center">
+            <div class="flex items-center gap-1">
+              <icon-star class="text-graydark/50" />
+              <span>15k</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <icon-eye-view />
+              <span>4.5</span>
             </div>
           </div>
-          <button class="btn btn-ghost btn-circle">
-            <icon-book :isFilled="post?.isSaved" />
-          </button>
+          <div class="flex">
+            <button class="btn btn-ghost btn-circle">
+              <icon-edit-pen />
+            </button>
+            <button class="btn btn-ghost btn-circle">
+              <icon-trash-delete />
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -32,13 +36,13 @@
 <script lang="ts" setup>
 import { defineProps } from 'vue'
 import IconBook from './icons/IconBook.vue'
+import IconTrashDelete from '@/components/icons/IconTrashDelete.vue'
+import IconEditPen from '@/components/icons/IconEditPen.vue'
+import IconEyeView from '@/components/icons/IconEyeView.vue'
+import IconStar from '@/components/icons/IconStar.vue'
 
 const props = defineProps({
   post: Object,
-  layout: {
-    type: String,
-    default: 'vertical',
-  },
 })
 </script>
 
@@ -59,11 +63,6 @@ const props = defineProps({
   background: #f5f5f5;
   padding: 0.8rem;
   border-radius: 1rem;
-}
-
-.horizontal {
-  display: flex;
-  gap: 1.25rem;
 }
 
 .horizontal > figure,

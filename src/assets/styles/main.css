@@ -120,3 +120,6 @@ html {
     color: white;
     background: #F81539BF;
 }
+.shadow-custom {
+    box-shadow: 0px 0px 32px 0px #00000012;
+}
