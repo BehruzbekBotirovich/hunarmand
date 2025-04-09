@@ -48,11 +48,18 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import PostsPageableComponent from '@/components/PostsPageableComponent.vue';
 
 const activeLayout = ref('horizontal');
 const activeTab = ref('New');
+const screenWidth = ref(window.innerWidth);
+onMounted(() => {
+    if (screenWidth.value > 540 && screenWidth.value < 780) {
+        activeLayout.value = 'horizontal'
+    }
+})
+
 </script>
 <style scoped>
 nav>ul>li {

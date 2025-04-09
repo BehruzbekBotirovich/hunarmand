@@ -1,5 +1,6 @@
 <template>
-  <div :class="['grid gap-6 my-10', props.layout === 'vertical' ? 'grid-cols-4' : 'grid-cols-2']">
+  <div
+    :class="['grid gap-6 my-10', props.layout === 'vertical' ? 'sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4' : 'grid-cols-1 lg:grid-cols-2']">
     <post-card-component v-for="item in posts" :key="String(item.id)" :post="item" :layout="props.layout" />
   </div>
   <div class="flex items-center gap-2">

@@ -1,6 +1,6 @@
 <template>
   <!-- Tabs -->
-  <div class="flex space-x-4 my-6">
+  <div class="flex space-x-4 my-6 option_nav">
     <button @click="activeTab = 'post'" :class="{ active: activeTab === 'post' }" class="btn px-7 btn-ghost">
       Send Post
     </button>
@@ -36,26 +36,30 @@
       <div class="mt-4">
         <label class="block mb-2">Explanation</label>
         <text-format-input v-model="explanation" />
+        <!-- <image-many-uploader-component /> -->
+
       </div>
     </div>
 
     <!-- Right Section: Image Upload -->
-    <div class="w-[360px]">
-      <image-uploader-component/>
-      <!-- Actions -->
-      <div class="mt-6 grid grid-cols-3 gap-4">
-        <button class="btn py-2 bg-graylight">
-          <icon-draft-save />
-          <span>Draft</span>
-        </button>
-        <button class="btn py-2 bg-graylight">
-          <icon-eye-view />
-          <span>Preview </span>
-        </button>
-        <button class="btn py-2 bg-mainpink/75 text-white">
-          <icon-share />
-          Public
-        </button>
+    <div>
+      <div class="w-[360px] mb-6">
+        <image-uploader-component />
+        <!-- Actions -->
+        <div class="mt-6 grid grid-cols-3 gap-4">
+          <button class="btn py-2 bg-graylight">
+            <icon-draft-save />
+            <span>Draft</span>
+          </button>
+          <button class="btn py-2 bg-graylight">
+            <icon-eye-view />
+            <span>Preview </span>
+          </button>
+          <button class="btn py-2 bg-mainpink/75 text-white">
+            <icon-share />
+            Public
+          </button>
+        </div>
       </div>
     </div>
   </div>
@@ -68,6 +72,7 @@ import IconShare from '@/components/icons/IconShare.vue'
 import IconEyeView from '@/components/icons/IconEyeView.vue'
 import IconDraftSave from '@/components/icons/IconDraftSave.vue'
 import ImageUploaderComponent from '@/components/ImageUploaderComponent.vue'
+import ImageManyUploaderComponent from '@/components/ImageManyUploaderComponent.vue'
 
 import TextFormatInput from '@/components/TextFormatInput.vue'
 
@@ -76,20 +81,11 @@ const title = ref('')
 const newTag = ref('')
 const tags = ref([])
 const explanation = ref('')
-const image = ref(null)
-const fileInput = ref(null)
 
 const addTag = () => {
   if (newTag.value.trim()) {
     tags.value.push(newTag.value.trim())
     newTag.value = ''
-  }
-}
-
-const handleFileUpload = (event) => {
-  const file = event.target.files[0]
-  if (file) {
-    image.value = URL.createObjectURL(file)
   }
 }
 </script>
@@ -101,15 +97,7 @@ const handleFileUpload = (event) => {
   font-weight: 500;
 }
 
-.active::after {
-  content: '';
-  position: absolute;
-  top: 30%;
-  left: 1rem;
-  width: 6px;
-  height: 6px;
-  border-radius: 3px;
-  background: #ff0062;
-  margin-top: 4px;
+.option_nav>button.active:hover {
+  color: black;
 }
 </style>

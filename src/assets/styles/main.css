@@ -37,26 +37,26 @@
 }
 
 html {
-    font-size: 6px;
+    font-size: 10px;
 
     @variant sm {
-        font-size: 7px;
+        font-size: 12px;
     }
 
     @variant md {
-        font-size: 8px;
+        font-size: 13px;
     }
 
     @variant lg {
-        font-size: 9px;
+        font-size: 14px;
     }
 
     @variant xl {
-        font-size: 10px;
+        font-size: 15px;
     }
 
     @variant 2xl {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 

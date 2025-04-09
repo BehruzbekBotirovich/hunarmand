@@ -1,27 +1,27 @@
 <template>
     <div>
         <div class="bg-graylight p-8 pt-0 rounded-2xl relative">
-            <h1 class=" absolute left-8 top-8 text-4xl font-base">How to Spend the Perfect Day on Croatia’s Most
-                Magical Island
+            <h1 class="absolute left-8 top-6 text-4xl w-11/12 font-base">
+                {{ article.title }}
             </h1>
             <img src="/src/assets/images/remove/travel.jpg"
-                class="translate-y-28 rounded-xl max-h-[560px] aspect-[3/5] w-full object-cover">
+                class="translate-y-28 rounded-xl max-h-[560px] aspect-[5/3] w-full object-cover">
         </div>
 
         <div class="mt-28 mb-12">
             <ul class="content__info flex gap-16 justify-center">
                 <li>
                     <icon-calendar />
-                    <span>July 14 , 2022</span>
+                    <span>{{ article.date }}</span>
                 </li>
                 <li>
                     <icon-comment />
-                    <span>comments : 35</span>
+                    <span>comments : {{ article.comments }}</span>
                 </li>
 
                 <li>
                     <icon-folder />
-                    <span>Category : Sport</span>
+                    <span>Category : {{ article.category }}</span>
                 </li>
             </ul>
         </div>
@@ -36,7 +36,7 @@
                 for the bliss of souls like mine. I am so happy, my dear friend, so absorbed in the exquisite.</p>
             <div class="w-full my-10">
                 <img src="/src/assets/images/remove/beachboard.jpg"
-                    class="rounded-xl w-4/5 object-cover aspect-[3/5] mx-auto  max-h-[460px]">
+                    class="rounded-xl w-4/5 object-cover aspect-[5/3] mx-auto  max-h-[460px]">
             </div>
             <h2 class="content__subtitle">Not how long, but how well you have lived is the main
                 thing.</h2>

@@ -2,7 +2,7 @@
   <router-link :to="`/single/${post?.id}`">
     <div :class="props.layout" class="card-custom">
       <figure>
-        <img :src="post?.image" alt="" class="aspect-[9/5] w-full object-cover rounded-xl" />
+        <img :src="post?.image" alt="" class="aspect-[9/5] h-full w-full object-cover rounded-xl" />
       </figure>
       <div class="space-y-4 mt-4 p-0 flex flex-col">
         <h2 class="card-title w-full text-lg font-semibold truncate">
@@ -15,9 +15,9 @@
         <div class="card__user">
           <div class="flex items-center gap-2">
             <img :src="post?.avatar" alt="User" class="w-11 h-11 rounded-xl" />
-            <div>
-              <p class="font-medium">{{ post?.author }}</p>
-              <p class="text-graydark/75 text-sm">{{ post?.date }}</p>
+            <div class="">
+              <p class="font-medium text-nowrap">{{ post?.author }}</p>
+              <p class="text-graydark/75 text-sm text-nowrap">{{ post?.date }}</p>
             </div>
           </div>
           <button class="btn btn-ghost btn-circle">
@@ -64,14 +64,15 @@ const props = defineProps({
 .horizontal {
   display: flex;
   gap: 1.25rem;
-}
 
-.horizontal > figure,
-.horizontal > div {
-  width: 50%;
+  figure,
+  div {
+    width: 50%;
+  }
 }
 
 .horizontal .card__user {
+  width: 100%;
   margin-top: auto;
 }
 
@@ -80,8 +81,9 @@ const props = defineProps({
   display: block;
 }
 
-.vertical > figure,
-.vertical > div {
+
+.vertical>figure,
+.vertical>div {
   width: 100%;
 }
 

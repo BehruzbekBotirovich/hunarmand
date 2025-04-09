@@ -56,8 +56,8 @@ const submitComment = () => {
     <section class="my-15">
         <h2 class="section-title mb-8">Add A Comment</h2>
         <form @submit.prevent="submitComment">
-            <div class="flex w-full gap-6 mb-6">
-                <div class="space-y-4 w-1/2">
+            <div class="md:flex w-full gap-6 mb-6">
+                <div class="space-y-4 md:w-1/2 mb-6">
                     <p class="font-semibold mb-4">Name</p>
                     <input v-model="name" type="text" placeholder=""
                         class="input input-lg rounded-xl border-none w-full bg-graylight" />
@@ -70,13 +70,13 @@ const submitComment = () => {
                     <input v-model="email" type="text" placeholder=""
                         class="input input-lg rounded-xl border-none w-full bg-graylight" />
                 </div>
-                <div class="w-1/2">
+                <div class=" md:w-1/2">
                     <p class="font-semibold mb-4">Comment</p>
                     <textarea v-model="comment" type="text" placeholder="Search anything"
                         class="input input-lg rounded-xl border-none w-full h-full-custom p-6 bg-graylight resize-none" />
                 </div>
             </div>
-            <div class="flex gap-6">
+            <div class="flex flex-wrap md:flex-nowrap justify-end gap-6">
                 <div class="w-full p-1 flex items-center justify-between bg-graylight rounded-xl">
                     <span class="ml-4 font-semibold">Rate The Usefullness of The Article </span>
                     <ul class="flex gap-1">

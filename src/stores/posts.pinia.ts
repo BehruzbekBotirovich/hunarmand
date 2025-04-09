@@ -77,7 +77,7 @@ export const usePostsStore = defineStore('posts', {
         isSaved: true,
       },
       {
-        id: 4,
+        id: 6,
         title: 'How we built the first real self-driving car',
         description:
           'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
@@ -88,7 +88,7 @@ export const usePostsStore = defineStore('posts', {
         isSaved: true,
       },
       {
-        id: 5,
+        id: 7,
         title: 'How we built the first real self-driving car',
         description:
           'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
@@ -99,7 +99,7 @@ export const usePostsStore = defineStore('posts', {
         isSaved: true,
       },
       {
-        id: 4,
+        id: 8,
         title: 'How we built the first real self-driving car',
         description:
           'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
@@ -108,194 +108,7 @@ export const usePostsStore = defineStore('posts', {
         avatar: '/src/assets/images/remove/avatar1.jpg',
         date: 'Avgust 21, 2024',
         isSaved: true,
-      },
-      {
-        id: 5,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 4,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
-        image: '/src/assets/images/remove/hotdog.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 5,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 4,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
-        image: '/src/assets/images/remove/hotdog.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 5,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 4,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
-        image: '/src/assets/images/remove/hotdog.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 5,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 4,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
-        image: '/src/assets/images/remove/hotdog.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 5,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 4,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
-        image: '/src/assets/images/remove/hotdog.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 5,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 4,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
-        image: '/src/assets/images/remove/hotdog.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 5,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 4,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
-        image: '/src/assets/images/remove/hotdog.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 5,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 4,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
-        image: '/src/assets/images/remove/hotdog.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
-      {
-        id: 5,
-        title: 'How we built the first real self-driving car',
-        description:
-          'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
-        author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
-        date: 'Avgust 21, 2024',
-        isSaved: true,
-      },
+      },   
     ],
     myPosts: [
       {

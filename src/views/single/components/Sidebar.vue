@@ -1,42 +1,46 @@
 <template>
-    <aside class="w-[360px] relative ">
-        <div class="sticky top-0 right-0 h-fit w-full space-y-6">
-            <div class="flex gap-2 ">
-                <button class="btn text-graydark/50 w-auto">
-                    <icon-share />
-                    <span class="text-graydark/75">Share </span>
-                </button>
-                <button class="btn text-graydark/50 w-auto ">
-                    <icon-book />
-                    <span class="text-graydark/75">Marking</span>
-                </button>
-                <button class="btn text-graydark/50 w-auto">
-                    <icon-comment />
-                    <span class="text-graydark/75">Comment</span>
-                </button>
-            </div>
-
-            <div class="rounded-xl flex gap-3 p-4 bg-graylight">
-                <img src="@/assets/images/remove/avatar1.jpg" class="rounded-xl w-[5.5rem] aspect-square" alt="">
-                <div class="w-full">
-                    <div class="flex items-center">
-                        <router-link to="/writer">
-                            <h3 class="font-semibold my-2 text-lg">Louis Hoebregs</h3>
-                        </router-link>
-                        <div class="text-sm ml-auto text-graydark/75">27 posts</div>
+    <aside class="relative ">
+        <div class="lg:sticky top-0 right-0 h-fit w-full space-y-6">
+            <div class=" sm:flex lg:block gap-6 ">
+                <div class="sm:w-2/3 lg:w-full">
+                    <div class="grid grid-cols-3 lg:flex gap-2 mb-6 w-full">
+                        <button class="btn text-graydark/50 grid-span-1 lg:w-fit  ">
+                            <icon-share />
+                            <span class="text-graydark/75">Share </span>
+                        </button>
+                        <button class="btn text-graydark/50 grid-span-1 lg:w-fit ">
+                            <icon-book />
+                            <span class="text-graydark/75">Mark</span>
+                        </button>
+                        <button class="btn text-graydark/50 grid-span-1 lg:w-fit ">
+                            <icon-comment />
+                            <span class="text-graydark/75">Comment</span>
+                        </button>
                     </div>
-                    <button class="btn text-white bg-[#F81539BF]">+ Follow</button>
+                    <div class="rounded-xl flex gap-3 p-4 bg-graylight mb-6 sm:mb-0 lg:mb-6">
+                        <img src="@/assets/images/remove/avatar1.jpg" class="rounded-xl w-[5.5rem] aspect-square"
+                            alt="">
+                        <div class="w-full">
+                            <div class="flex items-center">
+                                <router-link to="/writer">
+                                    <h3 class="font-semibold my-2 text-lg">Louis Hoebregs</h3>
+                                </router-link>
+                                <div class="text-sm ml-auto text-right text-graydark/75">27 posts</div>
+                            </div>
+                            <button class="btn text-white bg-[#F81539BF]">+ Follow</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sm:w-1/3 lg:w-full bg-graylight p-4 rounded-xl">
+                    <h3 class="section-title">Tags</h3>
+                    <ul class="flex flex-wrap gap-1">
+                        <li v-for="(item, index) in tags" :key="index" class="text-graydark/75 mr-2">{{ item }}</li>
+                    </ul>
                 </div>
             </div>
 
-            <div class="bg-graylight p-4 rounded-xl">
-                <h3 class="section-title">Tags</h3>
-                <ul class="flex flex-wrap gap-1">
-                    <li v-for="(item, index) in tags" :key="index" class="text-graydark/75 mr-2">{{ item }}</li>
-                </ul>
-            </div>
-
-            <div class="bg-graylight space-y-5 p-4 rounded-xl">
+            <div class=" bg-graylight space-y-5 p-4 rounded-xl">
                 <h3 class="section-title">Top Posts</h3>
                 <div v-for="item in topPosts" :key="item.id" class="flex gap-2 items-center ">
                     <img :src="item.image" class="w-[5.5rem] h-auto aspect-square rounded-xl object-cover" alt="">
@@ -46,7 +50,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
 
     </aside>

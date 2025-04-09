@@ -1,19 +1,16 @@
 <template>
-  <div class="flex w-full gap-6 mb-8">
-    <div class="w-3/4">
+  <div class="lg:flex w-full gap-6 mb-8">
+    <div class=" lg:w-3/4">
       <h3 class="section-title mb-8">View Posts</h3>
       <div class="rounded-xl shadow-custom bg-white">
         <apexchart type="line" height="420px" :options="chartOptions" :series="series"></apexchart>
       </div>
     </div>
-    <div class="w-1/4">
+    <div class=" lg:w-1/4">
       <h3 class="section-title mb-8">Satisfaction of Posts</h3>
       <div class="grid grid-cols-3 gap-4 p-4 shadow-custom rounded-xl">
-        <div
-          v-for="(item, index) in moods"
-          :key="index"
-          class="flex flex-col items-center space-y-3 justify-center p-4 bg-graylight rounded-lg"
-        >
+        <div v-for="(item, index) in moods" :key="index"
+          class="flex flex-col items-center space-y-3 justify-center p-4 bg-graylight rounded-lg">
           <span class="text-sm font-medium">{{ item.month }}</span>
           <component :is="item.icon" :class="['w-12 h-12', item.color]" />
           <span class="text-gray-500 text-sm">20 Points</span>
@@ -24,7 +21,7 @@
 
   <div>
     <h3 class="section-title mb-8">Your Posts</h3>
-    <div class="grid grid-cols-4 gap-6">
+    <div class="grid md:frig-cols-2 lg:grid-cols-4 gap-6">
       <post-editable-component v-for="item in store.myPosts" :post="item" />
     </div>
   </div>

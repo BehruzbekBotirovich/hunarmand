@@ -14,16 +14,16 @@
               <icon-star class="text-graydark/50" />
               <span>15k</span>
             </div>
-            <div class="flex items-center gap-1">
+            <div class="flex items-center gap-1 text-graydark/50">
               <icon-eye-view />
               <span>4.5</span>
             </div>
           </div>
           <div class="flex">
-            <button class="btn btn-ghost btn-circle">
+            <button class="btn btn-ghost btn-circle text-graydark/50">
               <icon-edit-pen />
             </button>
-            <button class="btn btn-ghost btn-circle">
+            <button class="btn btn-ghost btn-circle text-graydark/50">
               <icon-trash-delete />
             </button>
           </div>
@@ -65,8 +65,8 @@ const props = defineProps({
   border-radius: 1rem;
 }
 
-.horizontal > figure,
-.horizontal > div {
+.horizontal>figure,
+.horizontal>div {
   width: 50%;
 }
 
@@ -79,8 +79,8 @@ const props = defineProps({
   display: block;
 }
 
-.vertical > figure,
-.vertical > div {
+.vertical>figure,
+.vertical>div {
   width: 100%;
 }
 
