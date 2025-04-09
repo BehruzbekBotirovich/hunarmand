@@ -2,16 +2,24 @@
 import { ref, onMounted, nextTick } from 'vue'
 import ArrowNavIcon from '@/components/icons/ArrowNavIcon.vue'
 
+import food from '/src/assets/images/category/food.jpg'
+import animal from '/src/assets/images/category/animal.jpg'
+import car from '/src/assets/images/category/car.jpg'
+import sport from '/src/assets/images/category/sport.jpg'
+import music from '/src/assets/images/category/music.jpg'
+import technology from '/src/assets/images/category/technology.jpg'
+import abstract from '/src/assets/images/category/abstract.jpg'
+
 const categories = ref([
-  { name: 'Food', image: '/src/assets/images/category/food.jpg' },
-  { name: 'Animal', image: '/src/assets/images/category/animal.jpg' },
-  { name: 'Car', image: '/src/assets/images/category/car.jpg' },
-  { name: 'Sport', image: '/src/assets/images/category/sport.jpg' },
-  { name: 'Music', image: '/src/assets/images/category/music.jpg' },
-  { name: 'Technology', image: '/src/assets/images/category/technology.jpg' },
-  { name: 'Abstract', image: '/src/assets/images/category/abstract.jpg' },
-  { name: 'Sport', image: '/src/assets/images/category/sport.jpg' },
-  { name: 'Music', image: '/src/assets/images/category/music.jpg' },
+  { name: 'Food', image: food },
+  { name: 'Animal', image: animal },
+  { name: 'Car', image: car },
+  { name: 'Sport', image: sport },
+  { name: 'Music', image: music },
+  { name: 'Technology', image: technology },
+  { name: 'Abstract', image: abstract },
+  { name: 'Sport', image: sport },
+  { name: 'Music', image: music },
 ])
 
 const container = ref<HTMLElement | null>(null)
