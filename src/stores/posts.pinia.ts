@@ -12,9 +12,10 @@ interface Post {
 }
 
 interface PostsState {
-  posts: Post[]
-  loading: boolean
-  error: string | null
+  posts: Post[];
+  myPosts: Post[]; // <-- вот это добавь
+  loading: boolean;
+  error: string | null;
 }
 
 export const usePostsStore = defineStore('posts', {
@@ -108,8 +109,9 @@ export const usePostsStore = defineStore('posts', {
         avatar: '/src/assets/images/remove/avatar1.jpg',
         date: 'Avgust 21, 2024',
         isSaved: true,
-      },   
+      },
     ],
+
     myPosts: [
       {
         id: 1,
