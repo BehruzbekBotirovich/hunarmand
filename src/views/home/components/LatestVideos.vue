@@ -66,7 +66,7 @@
         </div>
       </div>
       <!-- mobile & table -->
-      <div class="aspect-[7/4]">
+      <div class="lg:hidden aspect-[7/4]">
         <carousel-custom :slides="videos" :isVideo="true" class="lg:hidden" />
       </div>
     </div>

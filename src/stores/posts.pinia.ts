@@ -13,7 +13,7 @@ interface Post {
 
 interface PostsState {
   posts: Post[];
-  myPosts: Post[]; // <-- вот это добавь
+  myPosts: Post[];
   loading: boolean;
   error: string | null;
 }

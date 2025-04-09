@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
+import DefaultLayout from '@/layouts/DefaultLayout.vue'
 const router = createRouter({
   linkActiveClass: 'border-indigo-500',
   linkExactActiveClass: 'border-indigo-700',
@@ -8,7 +8,7 @@ const router = createRouter({
     {
       path: '/',
       name: 'defaultLayout',
-      component: import('@/layouts/DefaultLayout.vue'),
+      component: DefaultLayout,
       children: [
         {
           path: '',
@@ -26,14 +26,14 @@ const router = createRouter({
           component: () => import('@/views/writer/WriterPage.vue')
         },
         {
-          path:'/about',
-          name:'about',
-          component:()=>import('@/views/about/AboutPage.vue')
+          path: '/about',
+          name: 'about',
+          component: () => import('@/views/about/AboutPage.vue')
         },
         {
-          path:'/category',
-          name:'category',
-          component:()=>import('@/views/category/CategoryPage.vue')
+          path: '/category',
+          name: 'category',
+          component: () => import('@/views/category/CategoryPage.vue')
         },
         {
           path: '/profile',
