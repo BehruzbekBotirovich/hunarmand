@@ -2,7 +2,7 @@
   <div class="container">
     <form @submit.prevent="submitForm">
       <!-- Поля ввода -->
-      <div class="grid grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
         <div>
           <label class="block font-medium mb-2">First Name</label>
           <input v-model="form.subject" type="text" required class="input-field" />
@@ -19,12 +19,12 @@
 
       <!-- Описание и изображение -->
       <div class="grid grid-cols-4 gap-6 mt-6">
-        <div class="col-span-3">
+        <div class="col-span-4 lg:col-span-3">
           <label class="block font-medium mb-8">Explanation</label>
           <text-format-input v-model="form.explanation" />
         </div>
 
-        <div>
+        <div class="col-span-4 lg:col-span-1">
           <image-uploader-component v-model="form.img" />
         </div>
       </div>

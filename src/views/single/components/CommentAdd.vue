@@ -77,8 +77,8 @@ const submitComment = () => {
                 </div>
             </div>
             <div class="flex flex-wrap md:flex-nowrap justify-end gap-6">
-                <div class="w-full p-1 flex items-center justify-between bg-graylight rounded-xl">
-                    <span class="ml-4 font-semibold">Rate The Usefullness of The Article </span>
+                <div class="w-full p-1 flex lg:block xl:flex  items-center justify-between bg-graylight rounded-xl">
+                    <span class="ml-4 mb-2 font-semibold">Rate The Usefullness of The Article </span>
                     <ul class="flex gap-1">
                         <li v-for="(rating, index) in ratings" :key="index" class="btn btn-custom" :style="[{ color: rating.value == selectedRating ? 'white' : rating.color },
                         { background: rating.value !== selectedRating ? 'none' : rating.color }

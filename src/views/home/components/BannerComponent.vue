@@ -3,11 +3,7 @@
     <div class="flex gap-6 h-[30rem] mb-15">
       <!-- def card news -->
       <div class="hidden lg:block w-1/4  h-full relative rounded-2xl overflow-hidden">
-        <img
-          src="/src/assets/images/remove/carsafe.jpg"
-          class="w-full h-full object-cover"
-          alt=""
-        />
+        <img src="/src/assets/images/remove/carsafe.jpg" class="w-full h-full object-cover" alt="" />
         <div class="bg-graylight p-4 absolute left-4 right-4 bottom-4 rounded-xl">
           <h3 class="text-2xl mb-4">How to drive safely</h3>
           <p class="truncate-text">
@@ -16,7 +12,7 @@
             accidents can happen to anybody, there are things you can do to drive safely and do your
             best to avoid them.
           </p>
-        </div>  
+        </div>
       </div>
 
       <div class="hidden lg:block w-1/4  h-full relative rounded-2xl overflow-hidden">
@@ -59,36 +55,39 @@ const nextSlide = () => {
   currentSlide.value = (currentSlide.value + 1) % slides.value.length
 }
 
+import img1 from '/src/assets/images/remove/carousel1.jpg'
+import img2 from '/src/assets/images/remove/carousel2.jpg'
+
 const slides = ref([
   {
     title: 'Why I Stopped Using Multiple Monitor',
     description:
       'A Single Monitor Manifesto — Many developers believe multiple monitors improve productivity. Studies have proven it, right? Well, keep in mind, many of those studies are commissioned from monitor manufacturers like',
-    image: '/src/assets/images/remove/carousel1.jpg',
+    image: img1,
   },
   {
     title: 'The Future of AI in Development',
     description:
       'A Single Monitor Manifesto — Many developers believe multiple monitors improve productivity. Studies have proven it, right? Well, keep in mind, many of those studies are commissioned from monitor manufacturers like',
-    image: '/src/assets/images/remove/carousel2.jpg',
+    image: img2,
   },
   {
     title: 'Best Practices for Frontend Performance',
     description:
       'A Single Monitor Manifesto — Many developers believe multiple monitors improve productivity. Studies have proven it, right? Well, keep in mind, many of those studies are commissioned from monitor manufacturers like',
-    image: '/src/assets/images/remove/carousel1.jpg',
+    image: img1,
   },
   {
     title: 'The Future of AI in Development',
     description:
       'A Single Monitor Manifesto — Many developers believe multiple monitors improve productivity. Studies have proven it, right? Well, keep in mind, many of those studies are commissioned from monitor manufacturers like',
-    image: '/src/assets/images/remove/carousel2.jpg',
+    image: img2,
   },
   {
     title: 'Best Practices for Frontend Performance',
     description:
       'A Single Monitor Manifesto — Many developers believe multiple monitors improve productivity. Studies have proven it, right? Well, keep in mind, many of those studies are commissioned from monitor manufacturers like',
-    image: '/src/assets/images/remove/carousel1.jpg',
+    image: img1,
   },
 ])
 </script>

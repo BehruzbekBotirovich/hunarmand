@@ -1,6 +1,6 @@
 <template>
   <div class="py-15" :class="!isInContent ? 'container' : ''">
-    <div class="flex items-center justify-between mb-4">
+    <div class="flex items-center justify-between">
       <h2 class="section-title">{{ title }}</h2>
 
       <div class="flex gap-5">
@@ -24,8 +24,8 @@
         640: { slidesPerView: 1 },
         1024: { slidesPerView: 1.2 },
         1280: { slidesPerView: 2 },
-      }" class="">
-      <swiper-slide v-for="post in props.data" :key="post.id">
+      }" class="-translate-x-8">
+      <swiper-slide v-for="post in props.data" :key="post.id" class="">
         <PostCardComponent :post="post" :layout="props.layout" />
       </swiper-slide>
     </swiper>
@@ -68,4 +68,8 @@ onMounted(() => {
 
 </script>
 
-<style scoped></style>
+<style scoped>
+:deep(.swiper) {
+  padding: 2rem;
+}
+</style>

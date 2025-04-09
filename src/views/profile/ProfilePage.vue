@@ -12,7 +12,7 @@
         <img src="/src/assets/images/remove/cover.jpg" class="w-full rounded-xl h-[150px] object-cover" alt="" />
       </div>
       <!-- info desktop -->
-      <div class="hidden  md:flex items-center justify-between">
+      <div class="hidden  md:block items-center justify-between">
         <div class="flex items-center gap-2">
           <img class="w-20 aspect-square rounded-xl" src="/src/assets/images/remove/avatar3.jpg" alt="" />
           <h3 class="">Develepbek Developiriddinov</h3>

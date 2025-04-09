@@ -9,10 +9,10 @@
 
         <div class="p-8 bg-graylight rounded-2xl mb-14">
             <h2 class="text-3xl mb-8">We pay attention to your needs and do the best design.</h2>
-            <div class="flex items-center gap-12">
-                <p class="w-1/2 content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore
-                    et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris
+            <div class="xl:flex items-center gap-12">
+                <p class="w-full xl:w-1/2 content mb-4 xl:mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in
+                    nisl nisi. Arcu cursus vitae congue mauris
                     rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis.
                     Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin.
                     Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper
@@ -20,8 +20,10 @@
                     tellus mauris a diam maecenas sed enim. Velit ut tortor pretium viverra suspendisse potenti nullam.
                     Et molestie ac feugiat sed lectus. Non nisi est sit amet facilisis magna. Dignissim diam quis enim
                     lobortis scelerisque fermentum. Odio ut enim blandit volutpat maecenas volutpat. Ornare lectus sit
-                    amet est placerat in egestas erat.</p>
-                <div class="w-1/2 relative aspect-[5/3] rounded-2xl overflow-hidden p-4 flex items-end">
+                    amet est placerat in egestas erat.
+                </p>
+                <div
+                    class="w-full xl:w-1/2 relative aspect-[2/1] xl:aspect-[5/3] rounded-2xl overflow-hidden p-4 flex items-end">
                     <img class="absolute top-0 left-0 object-cover h-full w-full"
                         src="/src/assets/images/remove/video.jpg" alt="">
 
@@ -94,7 +96,7 @@
 
         <div class="">
             <h3 class="section-title mb-8">Mega News Team</h3>
-            <div class="grid grid-cols-6 gap-6">
+            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-6">
                 <div v-for="item in team" :key="item.id"
                     class="bg-white shadow-custom space-y-5 rounded-2xl  p-3 pt-6 ">
                     <img src="/src/assets/images/remove/avatar3.jpg"

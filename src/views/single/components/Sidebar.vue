@@ -60,32 +60,39 @@ import IconShare from '@/components/icons/IconShare.vue'
 import IconBook from '@/components/icons/IconBook.vue'
 import IconComment from '@/components/icons/IconComment.vue'
 
+
+import yoga from '@/assets/images/remove/yoga.jpg'
+import frog from '@/assets/images/remove/frog.jpg'
+import dancegirl from '@/assets/images/remove/dancegirl.jpg'
+import porsh from '@/assets/images/remove/porsh.jpg'
+
 const tags = [
     'montenegro', 'visit croatia', 'luxury travel', 'travel', 'Paradise island', 'Self study'
 ]
+
 const topPosts = [
     {
         id: 1,
-        title: 'How to Spend the Perfect Day on Croatia’s Most Magical Island',
-        image: '/src/assets/images/remove/frog.jpg',
+        title: "How to Spend the Perfect Day on Croatia's Most Magical Island",
+        image: frog,
         date: '2023-07-20'
     },
     {
         id: 1,
-        title: 'How to Spend the Perfect Day on Croatia’s Most Magical Island',
-        image: '/src/assets/images/remove/yoga.jpg',
+        title: "How to Spend the Perfect Day on Croatia's Most Magical Island",
+        image: yoga,
         date: '2023-07-20'
     },
     {
         id: 1,
-        title: 'How to Spend the Perfect Day on Croatia’s Most Magical Island',
-        image: '/src/assets/images/remove/dancegirl.jpg',
+        title: "How to Spend the Perfect Day on Croatia's Most Magical Island",
+        image: dancegirl,
         date: '2023-07-20'
     },
     {
         id: 1,
-        title: 'How to Spend the Perfect Day on Croatia’s Most Magical Island',
-        image: '/src/assets/images/remove/porsh.jpg',
+        title: "How to Spend the Perfect Day on Croatia's Most Magical Island",
+        image: porsh,
         date: '2023-07-20'
     }
 ]

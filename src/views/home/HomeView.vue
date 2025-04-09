@@ -1,7 +1,7 @@
 <template>
   <category-slider-component />
   <banner-component />
-  <posts-carousel-component title="Popular Posts" />
+  <posts-carousel-component title="Popular Posts" :data="postsStore.posts" />
 
   <sport-banner />
   <news-post-view />

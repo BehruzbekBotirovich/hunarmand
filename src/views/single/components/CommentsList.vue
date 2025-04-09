@@ -52,26 +52,31 @@ import { ref } from 'vue'
 //icon
 import IconCalendar from '@/components/icons/IconCalendar.vue'
 import IconReply from '@/components/icons/IconReply.vue'
+
+import ava1 from '/src/assets/images/remove/avatar2.jpg'
+import ava2 from '/src/assets/images/remove/avatar3.jpg'
+import ava3 from '/src/assets/images/remove/avatar1.jpg'
+import ava4 from '/src/assets/images/remove/avatar4.jpg'
 // Список комментариев
 const comments = ref([
   {
     id: 1,
     author: 'Jon Kantner',
-    avatar: '/src/assets/images/remove/avatar2.jpg',
+    avatar: ava1,
     date: '2022 04 July',
     text: 'When you are ready to indulge your sense of excitement, check out the range of water- sports opportunities at the resort’s on-site water-sports center. Want to leave your stress on the water? The resort has kayaks, paddleboards, or the low-key pedal boats.',
     replies: [
       {
         id: 2,
         author: 'Cassie Evans',
-        avatar: '/src/assets/images/remove/avatar3.jpg',
+        avatar: ava2,
         date: '2022 04 July',
         text: 'A river or a lake island may be called an eyot...',
       },
       {
         id: 3,
         author: 'Behzad Pashaei',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava3,
         date: '2022 04 July',
         text: 'Oceanic islands are often considered to be islands...',
       },
@@ -81,7 +86,7 @@ const comments = ref([
   {
     id: 4,
     author: 'Patricia',
-    avatar: '/src/assets/images/remove/avatar4.jpg',
+    avatar: ava4,
     date: '2022 04 July',
     text: 'An island (or isle) is an isolated piece of habitat...',
     replies: [],
@@ -90,21 +95,21 @@ const comments = ref([
   {
     id: 1,
     author: 'Jon Kantner',
-    avatar: '/src/assets/images/remove/avatar2.jpg',
+    avatar: ava1,
     date: '2022 04 July',
     text: 'When you are ready to indulge your sense of excitement, check out the range of water- sports opportunities at the resort’s on-site water-sports center. Want to leave your stress on the water? The resort has kayaks, paddleboards, or the low-key pedal boats.',
     replies: [
       {
         id: 2,
         author: 'Cassie Evans',
-        avatar: '/src/assets/images/remove/avatar3.jpg',
+        avatar: ava2,
         date: '2022 04 July',
         text: 'A river or a lake island may be called an eyot...',
       },
       {
         id: 3,
         author: 'Behzad Pashaei',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava3,
         date: '2022 04 July',
         text: 'Oceanic islands are often considered to be islands...',
       },

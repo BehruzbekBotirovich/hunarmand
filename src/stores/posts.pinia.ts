@@ -1,4 +1,9 @@
 import { defineStore } from 'pinia'
+import ava from '/src/assets/images/remove/avatar1.jpg'
+import img1 from '/src/assets/images/remove/carousel1.jpg'
+import img2 from '/src/assets/images/remove/macbook.jpg'
+import img3 from '/src/assets/images/remove/porsh.jpg'
+import img4 from '/src/assets/images/remove/hotdog.jpg'
 
 interface Post {
   id: Number
@@ -26,9 +31,9 @@ export const usePostsStore = defineStore('posts', {
         title: 'First Popular Post',
         description:
           ' Of course the Puget Sound is very watery, and where there is water, there are boats. Today is the Grand Opening of Boating Season when traffic gets stalled in the University District(UW)  Montlake Bridge ',
-        image: '/src/assets/images/remove/carousel1.jpg',
+        image: img1,
         author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava,
         date: 'Avgust 21, 2024',
         isSaved: true,
       },
@@ -38,9 +43,9 @@ export const usePostsStore = defineStore('posts', {
           'How to choose the right laptop for programming ja sjd asjd ajkd asj dajs dajsd jk ejew jk wejr werje ',
         description:
           ' Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs ',
-        image: '/src/assets/images/remove/macbook.jpg',
+        image: img2,
         author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava,
         date: 'Avgust 21, 2024',
         isSaved: false,
       },
@@ -49,9 +54,9 @@ export const usePostsStore = defineStore('posts', {
         title: 'How we built the first real self-driving car',
         description:
           'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
+        image: img3,
         author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava,
         date: 'Avgust 21, 2024',
         isSaved: true,
       },
@@ -60,9 +65,9 @@ export const usePostsStore = defineStore('posts', {
         title: 'How we built the first real self-driving car',
         description:
           'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
-        image: '/src/assets/images/remove/hotdog.jpg',
+        image: img4,
         author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava,
         date: 'Avgust 21, 2024',
         isSaved: true,
       },
@@ -71,9 +76,9 @@ export const usePostsStore = defineStore('posts', {
         title: 'How we built the first real self-driving car',
         description:
           'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
+        image: img3,
         author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava,
         date: 'Avgust 21, 2024',
         isSaved: true,
       },
@@ -82,9 +87,9 @@ export const usePostsStore = defineStore('posts', {
         title: 'How we built the first real self-driving car',
         description:
           'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
-        image: '/src/assets/images/remove/hotdog.jpg',
+        image: img4,
         author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava,
         date: 'Avgust 21, 2024',
         isSaved: true,
       },
@@ -93,9 +98,9 @@ export const usePostsStore = defineStore('posts', {
         title: 'How we built the first real self-driving car',
         description:
           'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
+        image: img3,
         author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava,
         date: 'Avgust 21, 2024',
         isSaved: true,
       },
@@ -104,9 +109,9 @@ export const usePostsStore = defineStore('posts', {
         title: 'How we built the first real self-driving car',
         description:
           'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
-        image: '/src/assets/images/remove/hotdog.jpg',
+        image: img4,
         author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava,
         date: 'Avgust 21, 2024',
         isSaved: true,
       },
@@ -118,9 +123,9 @@ export const usePostsStore = defineStore('posts', {
         title: 'First Popular Post',
         description:
           ' Of course the Puget Sound is very watery, and where there is water, there are boats. Today is the Grand Opening of Boating Season when traffic gets stalled in the University District(UW)  Montlake Bridge ',
-        image: '/src/assets/images/remove/carousel1.jpg',
+        image: img1,
         author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava,
         date: 'Avgust 21, 2024',
         isSaved: true,
       },
@@ -130,9 +135,9 @@ export const usePostsStore = defineStore('posts', {
           'How to choose the right laptop for programming ja sjd asjd ajkd asj dajs dajsd jk ejew jk wejr werje ',
         description:
           ' Choosing the right laptop for programming can be a tough process. It’s easy to get confused while researching the various options. There are many different laptop models out there, each with a different set of trade-offs ',
-        image: '/src/assets/images/remove/macbook.jpg',
+        image: img2,
         author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava,
         date: 'Avgust 21, 2024',
         isSaved: false,
       },
@@ -141,9 +146,9 @@ export const usePostsStore = defineStore('posts', {
         title: 'How we built the first real self-driving car',
         description:
           'Electric self-driving cars will save millions of lives and significantly accelerate the world’s transition to sustainable energy, but only when',
-        image: '/src/assets/images/remove/porsh.jpg',
+        image: img3,
         author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava,
         date: 'Avgust 21, 2024',
         isSaved: true,
       },
@@ -152,9 +157,9 @@ export const usePostsStore = defineStore('posts', {
         title: 'How we built the first real self-driving car',
         description:
           'Parents often don’t want to buy fast food. They may be worried that it’s too expensive, unhealthy, or not worth the effort and time.',
-        image: '/src/assets/images/remove/hotdog.jpg',
+        image: img4,
         author: 'Developerriddin DEv',
-        avatar: '/src/assets/images/remove/avatar1.jpg',
+        avatar: ava,
         date: 'Avgust 21, 2024',
         isSaved: true,
       },
