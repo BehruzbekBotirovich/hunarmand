@@ -85,44 +85,46 @@ import CarouselCustom from '@/components/CarouselCustom.vue'
 const prevBtn = ref<HTMLElement | null>(null)
 const nextBtn = ref<HTMLElement | null>(null)
 
+import boxer from '/src/assets/images/remove/boxer.jpg'
+import headphone from '/src/assets/images/remove/headphone.jpg'
 const videos = [
   {
     id: 1,
     title: '5 Reasons Why You Should Wrap...',
     description:
       'So, you finally went to your first boxing class and learned the basics of the sport. You also learned that it’s recommended to wrap your hands before putting on the gloves. But there are times when you just don’t feel like wrapping them and you wonder why you even need them. Well, this blog is going to explain the benefits of wrapping your hands.',
-    image: '/src/assets/images/remove/boxer.jpg',
+    image: boxer,
   },
   {
     id: 2,
     title: 'Music Genre Classification With AI',
     description:
       'A Guide to analyzing Audio/Music signals in Python — Music is like a mirror, and it tells people a lot about who you are and what you care about, whether you like it or not. You’ve read all your free memberonly stories, become a member to get unlimited access. Your membership fee supports the voices you want to hear more from.',
-    image: '/src/assets/images/remove/headphone.jpg',
+    image: headphone,
   },
   {
     id: 3,
     title: 'Delicious Healthy Food Recipes',
     description: 'Try these amazing dishes for your diet plan...',
-    image: '/src/assets/images/remove/headphone.jpg',
+    image: headphone,
   },
   {
     id: 4,
     title: 'Work from Home Setup Ideas',
     description: 'Improve your productivity with these tips...',
-    image: '/src/assets/images/remove/boxer.jpg',
+    image: boxer,
   },
   {
     id: 3,
     title: 'Delicious Healthy Food Recipes',
     description: 'Try these amazing dishes for your diet plan...',
-    image: '/src/assets/images/remove/headphone.jpg',
+    image: headphone,
   },
   {
     id: 4,
     title: 'Work from Home Setup Ideas',
     description: 'Improve your productivity with these tips...',
-    image: '/src/assets/images/remove/boxer.jpg',
+    image: boxer,
   },
 ]
 

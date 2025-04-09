@@ -1,5 +1,5 @@
 <template>
-  <div class="py-15" :class="!isInContent ? 'container' : ''">
+  <div class="pt-10 pb-0 " :class="!isInContent ? 'container' : ''">
     <div class="flex items-center justify-between">
       <h2 class="section-title">{{ title }}</h2>
 
